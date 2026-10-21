@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "endtoggle",
+  "version": "${version}",
+  "name": "End Toggle",
+  "description": "Server-side: /end on|off opens or closes the End; while closed, entities pass through End portals.",
+  "authors": [
+    "qateralong"
+  ],
+  "license": "All Rights Reserved",
+  "icon": "assets/endtoggle/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.qateralong.endtoggle.EndToggle"
+    ]
+  },
+  "mixins": [
+    "endtoggle.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
